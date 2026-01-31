@@ -24,41 +24,72 @@
 
 
     <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm"
+        x-data="{ mobileMenuOpen: false }">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <!-- Logo -->
-                <div class="flex items-center gap-3">
-                    <img src="unnamed.png" alt="Skill Morph" class="h-20 w-auto">
+                <div class="flex items-center gap-3 shrink-0">
+                    <img src="unnamed.png" alt="Skill Morph" class="h-16 md:h-20 w-auto">
                 </div>
 
-                <!-- Desktop Navigation -->
                 <nav class="hidden lg:flex items-center gap-8">
                     <a href="index.html"
-                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500">Home</a>
+                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors">Home</a>
                     <a href="about.html"
-                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500">About</a>
+                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors">About</a>
                     <a href="service.html"
-                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500">Service</a>
+                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors">Service</a>
                     <a href="ongoing-courses.html"
-                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500">Courses</a>
-                    <a href="#publications"
-                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500">Publications</a>
-                    <a href="#instructors"
-                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500">Instructors</a>
+                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors">Courses</a>
+                    <a href="publications.html"
+                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors">Publications</a>
+                    <a href="instructor.html"
+                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors">Instructors</a>
                     <a href="#contact" class="btn-primary font-en text-sm">
                         <span>Contact Us</span>
                     </a>
                 </nav>
 
-                <!-- Mobile Menu Button -->
-                <button class="lg:hidden p-2">
-                    <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <button class="lg:hidden p-2 text-gray-700 hover:text-orange-500 transition-colors focus:outline-none"
+                    @click="mobileMenuOpen = !mobileMenuOpen">
+                    <svg x-show="!mobileMenuOpen" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
+                    <svg x-show="mobileMenuOpen" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        style="display: none;">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
                 </button>
             </div>
+        </div>
+
+        <div x-show="mobileMenuOpen" x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 -translate-y-full" x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 -translate-y-full"
+            class="absolute top-20 left-0 right-0 bg-white border-b border-gray-100 shadow-xl lg:hidden z-40"
+            style="display: none;" @click.away="mobileMenuOpen = false">
+
+            <nav class="flex flex-col p-6 space-y-4">
+                <a href="index.html"
+                    class="text-base font-bold text-gray-800 hover:text-orange-500 py-2 border-b border-gray-50 transition-colors">Home</a>
+                <a href="about.html"
+                    class="text-base font-bold text-gray-800 hover:text-orange-500 py-2 border-b border-gray-50 transition-colors">About</a>
+                <a href="service.html"
+                    class="text-base font-bold text-gray-800 hover:text-orange-500 py-2 border-b border-gray-50 transition-colors">Service</a>
+                <a href="ongoing-courses.html"
+                    class="text-base font-bold text-gray-800 hover:text-orange-500 py-2 border-b border-gray-50 transition-colors">Courses</a>
+                <a href="publications.html"
+                    class="text-base font-bold text-gray-800 hover:text-orange-500 py-2 border-b border-gray-50 transition-colors">Publications</a>
+                <a href="instructor.html"
+                    class="text-base font-bold text-gray-800 hover:text-orange-500 py-2 border-b border-gray-50 transition-colors">Instructors</a>
+                <a href="#contact" @click="mobileMenuOpen = false"
+                    class="bg-orange-600 text-white text-center py-4 rounded-2xl font-bold text-sm shadow-lg shadow-orange-100">
+                    Contact Us
+                </a>
+            </nav>
         </div>
     </header>
 
