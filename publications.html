@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Morph - Ignite Your Mind with Intelligent Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Bengali:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;600;700;900&family=Noto+Sans+Bengali:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="cursor-follow" id="cursorFollow"></div>
+
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <img src="unnamed.png" alt="Skill Morph" class="h-20 w-auto">
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a href="index.html"
+                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500">Home</a>
+                    <a href="about.html"
+                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500">About</a>
+                    <a href="service.html"
+                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500">Service</a>
+                    <a href="ongoing-courses.html"
+                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500">Courses</a>
+                    <a href="publications.html"
+                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500">Publications</a>
+                    <a href="instructor.html"
+                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500">Instructors</a>
+                    <a href="#contact" class="btn-primary font-en text-sm">
+                        <span>Contact Us</span>
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2">
+                    <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative pt-44 pb-24 bg-white overflow-hidden">
+        <div
+            class="absolute top-0 right-0 w-[600px] h-[600px] bg-orange-50/50 blur-[150px] rounded-full -translate-y-1/2 translate-x-1/2">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-50/50 blur-[120px] rounded-full translate-y-1/2 -translate-x-1/4">
+        </div>
+
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-50 border border-orange-100 mb-8">
+                    <span class="w-2 h-2 rounded-full bg-orange-500 animate-ping"></span>
+                    <span class="text-orange-600 text-[10px] font-black uppercase tracking-[0.2em] font-en">Academic
+                        Repository</span>
+                </div>
+
+                <h1 class="text-5xl md:text-8xl font-black text-gray-900 leading-[1.1] mb-8 font-en tracking-tighter">
+                    Pushing the <br>
+                    <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500">Boundaries</span>
+                    of AI
+                </h1>
+
+                <p class="text-gray-500 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto font-medium mb-12">
+                    আমাদের গবেষণাগুলো ডেটা সায়েন্স এবং মেশিন লার্নিংয়ের জটিল সমস্যাগুলোর উদ্ভাবনী সমাধান প্রদান করে।
+                    বিশ্বের নামকরা জার্নাল ও কনফারেন্সে প্রকাশিত আমাদের কাজগুলো দেখুন।
+                </p>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 py-10 border-y border-gray-100">
+                    <div class="text-center">
+                        <div class="text-3xl font-black text-gray-900">15+</div>
+                        <div class="text-gray-400 text-[10px] font-bold uppercase tracking-widest mt-1">Total Papers
+                        </div>
+                    </div>
+                    <div class="text-center border-x border-gray-100">
+                        <div class="text-3xl font-black text-gray-900">120+</div>
+                        <div class="text-gray-400 text-[10px] font-bold uppercase tracking-widest mt-1">Citations</div>
+                    </div>
+                    <div class="text-center md:border-r border-gray-100">
+                        <div class="text-3xl font-black text-gray-900">Q1</div>
+                        <div class="text-gray-400 text-[10px] font-bold uppercase tracking-widest mt-1">Avg. Journal
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-black text-gray-900">08</div>
+                        <div class="text-gray-400 text-[10px] font-bold uppercase tracking-widest mt-1">Collaborations
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-[#0a0f1a] relative overflow-hidden" id="publications" x-data="{ activeTab: 'journal' }">
+        <div class="absolute top-0 left-1/4 w-64 h-64 bg-orange-600/10 blur-[120px]"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600/10 blur-[150px]"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-7xl mx-auto">
+
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                    <div class="max-w-2xl">
+                        <span class="text-orange-500 font-mono text-sm tracking-[0.3em] uppercase block mb-3">
+                            Scientific Contributions
+                        </span>
+                        <h2
+                            class="text-5xl md:text-8xl font-black text-gray-900 leading-[1.1] mb-8 font-en tracking-tighter">
+                            Explore Our <br>
+                            <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 text-5xl md:text-6xl">Research
+                                Repository</span>
+                        </h2>
+                    </div>
+                    <div class="flex bg-white/5 p-1 rounded-2xl border border-white/10 backdrop-blur-md">
+                        <button @click="activeTab = 'journal'"
+                            :class="activeTab === 'journal' ? 'bg-orange-500 text-white shadow-lg' : 'text-gray-400 hover:text-white'"
+                            class="px-6 py-2.5 rounded-xl text-sm font-bold transition-all duration-300 uppercase tracking-wider">
+                            Journals
+                        </button>
+                        <button @click="activeTab = 'conference'"
+                            :class="activeTab === 'conference' ? 'bg-orange-500 text-white shadow-lg' : 'text-gray-400 hover:text-white'"
+                            class="px-6 py-2.5 rounded-xl text-sm font-bold transition-all duration-300 uppercase tracking-wider">
+                            Conferences
+                        </button>
+                    </div>
+                </div>
+
+                <div x-show="activeTab === 'journal'" x-transition:enter="transition ease-out duration-300"
+                    x-transition:enter-start="opacity-0 translate-y-4"
+                    x-transition:enter-end="opacity-100 translate-y-0" class="grid lg:grid-cols-2 gap-8">
+
+                    <div
+                        class="group relative bg-white/[0.03] border border-white/10 hover:border-orange-500/50 transition-all duration-500 rounded-3xl p-8 flex flex-col md:flex-row gap-8 items-start">
+
+                        <div class="flex md:flex-col items-center justify-between md:justify-start gap-4">
+                            <span
+                                class="text-5xl font-bold text-white/5 group-hover:text-orange-500/20 transition-colors">01</span>
+                            <div
+                                class="bg-orange-500/10 text-orange-400 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider">
+                                Dec 2025
+                            </div>
+                        </div>
+
+                        <div class="flex-grow">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="bg-blue-500/10 text-blue-400 text-[10px] font-bold px-3 py-1 rounded-full border border-blue-500/20 uppercase">SCIE
+                                    Indexed</span>
+                                <span
+                                    class="bg-purple-500/10 text-purple-400 text-[10px] font-bold px-3 py-1 rounded-full border border-purple-500/20 uppercase">Security
+                                    & Privacy</span>
+                            </div>
+
+                            <h4
+                                class="text-2xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors leading-snug">
+                                A Comparative Analysis of Ensemble-Based Machine Learning Approaches
+                            </h4>
+
+                            <p class="text-gray-400 text-sm mb-6 max-w-3xl italic">
+                                "Multi-Class Intrusion Detection in Drone Networks: A study on hybrid architectures..."
+                            </p>
+
+                            <div class="flex items-center gap-4 border-t border-white/5 pt-6">
+                                <div class="flex -space-x-3">
+                                    <div class="w-8 h-8 rounded-full bg-orange-500 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="Emran Masud">EM</div>
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="John Doe">JD</div>
+                                    <div class="w-8 h-8 rounded-full bg-gray-700 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="Sarah Khan">SK</div>
+                                </div>
+                                <div class="text-xs text-gray-500 font-medium">
+                                    <span class="text-gray-300">Emran Masud</span>, John Doe, <span class="italic">& 2
+                                        others</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shrink-0">
+                            <a href="#"
+                                class="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-orange-500 hover:border-orange-500 transition-all duration-300 group-hover:rotate-45">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="group relative bg-white/[0.03] border border-white/10 hover:border-orange-500/50 transition-all duration-500 rounded-3xl p-8 flex flex-col md:flex-row gap-8 items-start">
+
+                        <div class="flex md:flex-col items-center justify-between md:justify-start gap-4">
+                            <span
+                                class="text-5xl font-bold text-white/5 group-hover:text-orange-500/20 transition-colors">02</span>
+                            <div
+                                class="bg-orange-500/10 text-orange-400 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider">
+                                Dec 2025
+                            </div>
+                        </div>
+
+                        <div class="flex-grow">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="bg-blue-500/10 text-blue-400 text-[10px] font-bold px-3 py-1 rounded-full border border-blue-500/20 uppercase">SCIE
+                                    Indexed</span>
+                                <span
+                                    class="bg-purple-500/10 text-purple-400 text-[10px] font-bold px-3 py-1 rounded-full border border-purple-500/20 uppercase">Security
+                                    & Privacy</span>
+                            </div>
+
+                            <h4
+                                class="text-2xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors leading-snug">
+                                A Comparative Analysis of Ensemble-Based Machine Learning Approaches
+                            </h4>
+
+                            <p class="text-gray-400 text-sm mb-6 max-w-3xl italic">
+                                "Multi-Class Intrusion Detection in Drone Networks: A study on hybrid architectures..."
+                            </p>
+
+                            <div class="flex items-center gap-4 border-t border-white/5 pt-6">
+                                <div class="flex -space-x-3">
+                                    <div class="w-8 h-8 rounded-full bg-orange-500 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="Emran Masud">EM</div>
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="John Doe">JD</div>
+                                    <div class="w-8 h-8 rounded-full bg-gray-700 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="Sarah Khan">SK</div>
+                                </div>
+                                <div class="text-xs text-gray-500 font-medium">
+                                    <span class="text-gray-300">Emran Masud</span>, John Doe, <span class="italic">& 2
+                                        others</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shrink-0">
+                            <a href="#"
+                                class="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-orange-500 hover:border-orange-500 transition-all duration-300 group-hover:rotate-45">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="group relative bg-white/[0.03] border border-white/10 hover:border-orange-500/50 transition-all duration-500 rounded-3xl p-8 flex flex-col md:flex-row gap-8 items-start">
+
+                        <div class="flex md:flex-col items-center justify-between md:justify-start gap-4">
+                            <span
+                                class="text-5xl font-bold text-white/5 group-hover:text-orange-500/20 transition-colors">03</span>
+                            <div
+                                class="bg-orange-500/10 text-orange-400 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider">
+                                Dec 2025
+                            </div>
+                        </div>
+
+                        <div class="flex-grow">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="bg-blue-500/10 text-blue-400 text-[10px] font-bold px-3 py-1 rounded-full border border-blue-500/20 uppercase">SCIE
+                                    Indexed</span>
+                                <span
+                                    class="bg-purple-500/10 text-purple-400 text-[10px] font-bold px-3 py-1 rounded-full border border-purple-500/20 uppercase">Security
+                                    & Privacy</span>
+                            </div>
+
+                            <h4
+                                class="text-2xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors leading-snug">
+                                A Comparative Analysis of Ensemble-Based Machine Learning Approaches
+                            </h4>
+
+                            <p class="text-gray-400 text-sm mb-6 max-w-3xl italic">
+                                "Multi-Class Intrusion Detection in Drone Networks: A study on hybrid architectures..."
+                            </p>
+
+                            <div class="flex items-center gap-4 border-t border-white/5 pt-6">
+                                <div class="flex -space-x-3">
+                                    <div class="w-8 h-8 rounded-full bg-orange-500 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="Emran Masud">EM</div>
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="John Doe">JD</div>
+                                    <div class="w-8 h-8 rounded-full bg-gray-700 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="Sarah Khan">SK</div>
+                                </div>
+                                <div class="text-xs text-gray-500 font-medium">
+                                    <span class="text-gray-300">Emran Masud</span>, John Doe, <span class="italic">& 2
+                                        others</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shrink-0">
+                            <a href="#"
+                                class="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-orange-500 hover:border-orange-500 transition-all duration-300 group-hover:rotate-45">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="group relative bg-white/[0.03] border border-white/10 hover:border-orange-500/50 transition-all duration-500 rounded-3xl p-8 flex flex-col md:flex-row gap-8 items-start">
+
+                        <div class="flex md:flex-col items-center justify-between md:justify-start gap-4">
+                            <span
+                                class="text-5xl font-bold text-white/5 group-hover:text-orange-500/20 transition-colors">04</span>
+                            <div
+                                class="bg-orange-500/10 text-orange-400 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider">
+                                Dec 2025
+                            </div>
+                        </div>
+
+                        <div class="flex-grow">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="bg-blue-500/10 text-blue-400 text-[10px] font-bold px-3 py-1 rounded-full border border-blue-500/20 uppercase">SCIE
+                                    Indexed</span>
+                                <span
+                                    class="bg-purple-500/10 text-purple-400 text-[10px] font-bold px-3 py-1 rounded-full border border-purple-500/20 uppercase">Security
+                                    & Privacy</span>
+                            </div>
+
+                            <h4
+                                class="text-2xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors leading-snug">
+                                A Comparative Analysis of Ensemble-Based Machine Learning Approaches
+                            </h4>
+
+                            <p class="text-gray-400 text-sm mb-6 max-w-3xl italic">
+                                "Multi-Class Intrusion Detection in Drone Networks: A study on hybrid architectures..."
+                            </p>
+
+                            <div class="flex items-center gap-4 border-t border-white/5 pt-6">
+                                <div class="flex -space-x-3">
+                                    <div class="w-8 h-8 rounded-full bg-orange-500 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="Emran Masud">EM</div>
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="John Doe">JD</div>
+                                    <div class="w-8 h-8 rounded-full bg-gray-700 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="Sarah Khan">SK</div>
+                                </div>
+                                <div class="text-xs text-gray-500 font-medium">
+                                    <span class="text-gray-300">Emran Masud</span>, John Doe, <span class="italic">& 2
+                                        others</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shrink-0">
+                            <a href="#"
+                                class="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-orange-500 hover:border-orange-500 transition-all duration-300 group-hover:rotate-45">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="group relative bg-white/[0.03] border border-white/10 hover:border-orange-500/50 transition-all duration-500 rounded-3xl p-8 flex flex-col md:flex-row gap-8 items-start">
+
+                        <div class="flex md:flex-col items-center justify-between md:justify-start gap-4">
+                            <span
+                                class="text-5xl font-bold text-white/5 group-hover:text-orange-500/20 transition-colors">05</span>
+                            <div
+                                class="bg-orange-500/10 text-orange-400 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider">
+                                Dec 2025
+                            </div>
+                        </div>
+
+                        <div class="flex-grow">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="bg-blue-500/10 text-blue-400 text-[10px] font-bold px-3 py-1 rounded-full border border-blue-500/20 uppercase">SCIE
+                                    Indexed</span>
+                                <span
+                                    class="bg-purple-500/10 text-purple-400 text-[10px] font-bold px-3 py-1 rounded-full border border-purple-500/20 uppercase">Security
+                                    & Privacy</span>
+                            </div>
+
+                            <h4
+                                class="text-2xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors leading-snug">
+                                A Comparative Analysis of Ensemble-Based Machine Learning Approaches
+                            </h4>
+
+                            <p class="text-gray-400 text-sm mb-6 max-w-3xl italic">
+                                "Multi-Class Intrusion Detection in Drone Networks: A study on hybrid architectures..."
+                            </p>
+
+                            <div class="flex items-center gap-4 border-t border-white/5 pt-6">
+                                <div class="flex -space-x-3">
+                                    <div class="w-8 h-8 rounded-full bg-orange-500 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="Emran Masud">EM</div>
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="John Doe">JD</div>
+                                    <div class="w-8 h-8 rounded-full bg-gray-700 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="Sarah Khan">SK</div>
+                                </div>
+                                <div class="text-xs text-gray-500 font-medium">
+                                    <span class="text-gray-300">Emran Masud</span>, John Doe, <span class="italic">& 2
+                                        others</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shrink-0">
+                            <a href="#"
+                                class="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-orange-500 hover:border-orange-500 transition-all duration-300 group-hover:rotate-45">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="group relative bg-white/[0.03] border border-white/10 hover:border-orange-500/50 transition-all duration-500 rounded-3xl p-8 flex flex-col md:flex-row gap-8 items-start">
+
+                        <div class="flex md:flex-col items-center justify-between md:justify-start gap-4">
+                            <span
+                                class="text-5xl font-bold text-white/5 group-hover:text-orange-500/20 transition-colors">06</span>
+                            <div
+                                class="bg-orange-500/10 text-orange-400 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider">
+                                Dec 2025
+                            </div>
+                        </div>
+
+                        <div class="flex-grow">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="bg-blue-500/10 text-blue-400 text-[10px] font-bold px-3 py-1 rounded-full border border-blue-500/20 uppercase">SCIE
+                                    Indexed</span>
+                                <span
+                                    class="bg-purple-500/10 text-purple-400 text-[10px] font-bold px-3 py-1 rounded-full border border-purple-500/20 uppercase">Security
+                                    & Privacy</span>
+                            </div>
+
+                            <h4
+                                class="text-2xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors leading-snug">
+                                A Comparative Analysis of Ensemble-Based Machine Learning Approaches
+                            </h4>
+
+                            <p class="text-gray-400 text-sm mb-6 max-w-3xl italic">
+                                "Multi-Class Intrusion Detection in Drone Networks: A study on hybrid architectures..."
+                            </p>
+
+                            <div class="flex items-center gap-4 border-t border-white/5 pt-6">
+                                <div class="flex -space-x-3">
+                                    <div class="w-8 h-8 rounded-full bg-orange-500 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="Emran Masud">EM</div>
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="John Doe">JD</div>
+                                    <div class="w-8 h-8 rounded-full bg-gray-700 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="Sarah Khan">SK</div>
+                                </div>
+                                <div class="text-xs text-gray-500 font-medium">
+                                    <span class="text-gray-300">Emran Masud</span>, John Doe, <span class="italic">& 2
+                                        others</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shrink-0">
+                            <a href="#"
+                                class="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-orange-500 hover:border-orange-500 transition-all duration-300 group-hover:rotate-45">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div x-show="activeTab === 'conference'" x-transition:enter="transition ease-out duration-300"
+                    x-transition:enter-start="opacity-0 translate-y-4"
+                    x-transition:enter-end="opacity-100 translate-y-0" class="grid lg:grid-cols-2 gap-8">
+
+                    <div
+                        class="group relative bg-white/[0.03] border border-white/10 hover:border-orange-500/50 transition-all duration-500 rounded-3xl p-8 flex flex-col md:flex-row gap-8 items-start">
+
+                        <div class="flex md:flex-col items-center justify-between md:justify-start gap-4">
+                            <span
+                                class="text-5xl font-bold text-white/5 group-hover:text-orange-500/20 transition-colors">01</span>
+                            <div
+                                class="bg-orange-500/10 text-orange-400 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider">
+                                Dec 2025
+                            </div>
+                        </div>
+
+                        <div class="flex-grow">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="bg-blue-500/10 text-blue-400 text-[10px] font-bold px-3 py-1 rounded-full border border-blue-500/20 uppercase">SCIE
+                                    Indexed</span>
+                                <span
+                                    class="bg-purple-500/10 text-purple-400 text-[10px] font-bold px-3 py-1 rounded-full border border-purple-500/20 uppercase">Security
+                                    & Privacy</span>
+                            </div>
+
+                            <h4
+                                class="text-2xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors leading-snug">
+                                A Comparative Analysis of Ensemble-Based Machine Learning Approaches
+                            </h4>
+
+                            <p class="text-gray-400 text-sm mb-6 max-w-3xl italic">
+                                "Multi-Class Intrusion Detection in Drone Networks: A study on hybrid architectures..."
+                            </p>
+
+                            <div class="flex items-center gap-4 border-t border-white/5 pt-6">
+                                <div class="flex -space-x-3">
+                                    <div class="w-8 h-8 rounded-full bg-orange-500 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="Emran Masud">EM</div>
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="John Doe">JD</div>
+                                    <div class="w-8 h-8 rounded-full bg-gray-700 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="Sarah Khan">SK</div>
+                                </div>
+                                <div class="text-xs text-gray-500 font-medium">
+                                    <span class="text-gray-300">Emran Masud</span>, John Doe, <span class="italic">& 2
+                                        others</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shrink-0">
+                            <a href="#"
+                                class="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-orange-500 hover:border-orange-500 transition-all duration-300 group-hover:rotate-45">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="group relative bg-white/[0.03] border border-white/10 hover:border-orange-500/50 transition-all duration-500 rounded-3xl p-8 flex flex-col md:flex-row gap-8 items-start">
+
+                        <div class="flex md:flex-col items-center justify-between md:justify-start gap-4">
+                            <span
+                                class="text-5xl font-bold text-white/5 group-hover:text-orange-500/20 transition-colors">02</span>
+                            <div
+                                class="bg-orange-500/10 text-orange-400 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider">
+                                Dec 2025
+                            </div>
+                        </div>
+
+                        <div class="flex-grow">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="bg-blue-500/10 text-blue-400 text-[10px] font-bold px-3 py-1 rounded-full border border-blue-500/20 uppercase">SCIE
+                                    Indexed</span>
+                                <span
+                                    class="bg-purple-500/10 text-purple-400 text-[10px] font-bold px-3 py-1 rounded-full border border-purple-500/20 uppercase">Security
+                                    & Privacy</span>
+                            </div>
+
+                            <h4
+                                class="text-2xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors leading-snug">
+                                A Comparative Analysis of Ensemble-Based Machine Learning Approaches
+                            </h4>
+
+                            <p class="text-gray-400 text-sm mb-6 max-w-3xl italic">
+                                "Multi-Class Intrusion Detection in Drone Networks: A study on hybrid architectures..."
+                            </p>
+
+                            <div class="flex items-center gap-4 border-t border-white/5 pt-6">
+                                <div class="flex -space-x-3">
+                                    <div class="w-8 h-8 rounded-full bg-orange-500 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="Emran Masud">EM</div>
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="John Doe">JD</div>
+                                    <div class="w-8 h-8 rounded-full bg-gray-700 border-2 border-[#0a0f1a] flex items-center justify-center text-[10px] font-bold text-white"
+                                        title="Sarah Khan">SK</div>
+                                </div>
+                                <div class="text-xs text-gray-500 font-medium">
+                                    <span class="text-gray-300">Emran Masud</span>, John Doe, <span class="italic">& 2
+                                        others</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shrink-0">
+                            <a href="#"
+                                class="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-orange-500 hover:border-orange-500 transition-all duration-300 group-hover:rotate-45">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="relative bg-[#05080f] text-gray-400 pt-20 pb-5 overflow-hidden">
+        <div class="absolute top-0 left-0 w-64 h-64 bg-orange-600/5 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-600/5 blur-[150px] rounded-full"></div>
+
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-5">
+
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3">
+                        <img src="unnamed.png" alt="Skill Morph"
+                            class="h-20 w-20 rounded-2xl shadow-lg shadow-orange-500/20 object-cover">
+                        <span class="text-2xl font-bold text-white font-en tracking-tight">Skill<span
+                                class="text-orange-500">Morph</span></span>
+                    </div>
+                    <p class="text-sm leading-relaxed max-w-xs italic">
+                        "Ignite Your Mind with Intelligent Learning. Bridging the gap between research and real-world
+                        application."
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-white hover:bg-orange-500 hover:border-orange-500 hover:shadow-[0_0_20px_rgba(249,115,22,0.4)] transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-white hover:bg-[#0077b5] hover:border-[#0077b5] hover:shadow-[0_0_20px_rgba(0,119,181,0.4)] transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6 font-en uppercase tracking-widest text-sm">Quick Links</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="#"
+                                class="hover:text-orange-400 hover:pl-2 transition-all duration-300 flex items-center gap-2"><span>About
+                                    Our Mission</span></a></li>
+                        <li><a href="#"
+                                class="hover:text-orange-400 hover:pl-2 transition-all duration-300 flex items-center gap-2"><span>Research
+                                    Papers</span></a></li>
+                        <li><a href="#"
+                                class="hover:text-orange-400 hover:pl-2 transition-all duration-300 flex items-center gap-2"><span>Terms
+                                    & Privacy</span></a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6 font-en uppercase tracking-widest text-sm">Programs</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">ML for Research</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">Data Science Pro</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">Deep Learning Boot</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6 font-en uppercase tracking-widest text-sm">Contact Info</h4>
+                    <div class="space-y-4 text-sm mb-6">
+                        <p class="flex items-center gap-3"><span class="text-orange-500">📧</span> info@skillmorph.com
+                        </p>
+                        <p class="flex items-center gap-3"><span class="text-orange-500">📱</span> +880 1XXX-XXXXXX</p>
+                        <p class="flex items-start gap-3"><span class="text-orange-500">📍</span> Dhaka, Bangladesh</p>
+                    </div>
+                    <form class="relative group">
+                        <input type="email" placeholder="Your email"
+                            class="w-full bg-white/5 border border-white/10 rounded-xl py-3 px-4 text-white text-xs focus:outline-none focus:border-orange-500/50 transition-all">
+                        <button
+                            class="absolute right-2 top-2 bg-orange-600 hover:bg-orange-500 text-white p-1.5 rounded-lg transition-colors">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-en">
+                <p>&copy; 2026 <span class="text-white font-bold">Skill Morph</span>. Crafted for Intelligent Minds.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        class="fixed bottom-8 right-8 w-14 h-14 gradient-flame text-white rounded-full shadow-2xl hover:scale-110 transition z-50 flex items-center justify-center font-bold text-xl">
+        ↑
+    </button>
+
+    <script src="script.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</body>
+
+</html>

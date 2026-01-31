@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Morph - Ignite Your Mind with Intelligent Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Bengali:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;600;700;900&family=Noto+Sans+Bengali:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="cursor-follow" id="cursorFollow"></div>
+
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <img src="unnamed.png" alt="Skill Morph" class="h-20 w-auto">
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a href="index.html"
+                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500">Home</a>
+                    <a href="about.html"
+                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500">About</a>
+                    <a href="service.html"
+                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500">Service</a>
+                    <a href="ongoing-courses.html"
+                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500">Courses</a>
+                    <a href="#publications"
+                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500">Publications</a>
+                    <a href="#instructors"
+                        class="nav-link font-en text-sm font-medium text-gray-700 hover:text-orange-500">Instructors</a>
+                    <a href="#contact" class="btn-primary font-en text-sm">
+                        <span>Contact Us</span>
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2">
+                    <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="pt-32 pb-20 bg-[#0a0f1a] relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20"
+            style="background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');"></div>
+        <div class="container mx-auto px-4 lg:px-8 relative z-10 text-center">
+            <span class="text-orange-500 font-mono text-sm tracking-[0.5em] uppercase mb-4 block">Our Expertise</span>
+            <h1 class="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
+                Empowering Through <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-300">Intelligent
+                    Solutions</span>
+            </h1>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto font-medium leading-relaxed">
+                আমরা কেবল শেখাই না, বরং গবেষণা এবং ইন্ডাস্ট্রির মেলবন্ধনে আপনার ক্যারিয়ার ও প্রতিষ্ঠানকে ভবিষ্যতের জন্য
+                প্রস্তুত করি।
+            </p>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <div
+                    class="p-10 rounded-[40px] bg-gray-50 border border-gray-100 group hover:bg-white hover:shadow-2xl transition-all duration-500">
+                    <div class="flex items-center gap-6 mb-8">
+                        <div
+                            class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center text-3xl text-white shadow-lg">
+                            🔬</div>
+                        <h3 class="text-3xl font-bold text-gray-900">Research Collaboration</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">গবেষণাপত্র তৈরি, ডেটা অ্যানালাইসিস এবং পাবলিকেশন
+                        সাপোর্ট। আমরা একাডেমিক গবেষণাকে পরবর্তী ধাপে নিয়ে যেতে কাজ করি।</p>
+                    <ul class="space-y-3 text-sm font-bold text-gray-500">
+                        <li class="flex items-center gap-2"><span class="text-orange-500">✔</span> Manuscript
+                            Development</li>
+                        <li class="flex items-center gap-2"><span class="text-orange-500">✔</span> Experimental Setup
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    class="p-10 rounded-[40px] bg-gray-50 border border-gray-100 group hover:bg-white hover:shadow-2xl transition-all duration-500">
+                    <div class="flex items-center gap-6 mb-8">
+                        <div
+                            class="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center text-3xl text-white shadow-lg">
+                            🎓</div>
+                        <h3 class="text-3xl font-bold text-gray-900">Academic Excellence</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">শিক্ষার্থীদের জন্য উন্নত মানের কোর্স এবং মেন্টরশিপ।
+                        আমরা বেসিক থেকে অ্যাডভান্সড রিসার্চ মেথডোলজি শেখাই।</p>
+                    <ul class="space-y-3 text-sm font-bold text-gray-500">
+                        <li class="flex items-center gap-2"><span class="text-blue-500">✔</span> Advanced ML Courses
+                        </li>
+                        <li class="flex items-center gap-2"><span class="text-blue-500">✔</span> Personalized Mentoring
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    class="p-10 rounded-[40px] bg-gray-50 border border-gray-100 group hover:bg-white hover:shadow-2xl transition-all duration-500">
+                    <div class="flex items-center gap-6 mb-8">
+                        <div
+                            class="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center text-3xl text-white shadow-lg">
+                            💼</div>
+                        <h3 class="text-3xl font-bold text-gray-900">Industrial Impact</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">ইন্ডাস্ট্রিয়াল প্রজেক্টে AI এবং ডেটা সায়েন্সের
+                        ব্যবহার। বিজনেস অটোমেশনের জন্য স্মার্ট অ্যালগরিদম ডেভেলপমেন্ট।</p>
+                    <ul class="space-y-3 text-sm font-bold text-gray-500">
+                        <li class="flex items-center gap-2"><span class="text-green-500">✔</span> AI Solutions for SME
+                        </li>
+                        <li class="flex items-center gap-2"><span class="text-green-500">✔</span> Data Visualization
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    class="p-10 rounded-[40px] bg-gray-50 border border-gray-100 group hover:bg-white hover:shadow-2xl transition-all duration-500">
+                    <div class="flex items-center gap-6 mb-8">
+                        <div
+                            class="w-16 h-16 bg-purple-500 rounded-2xl flex items-center justify-center text-3xl text-white shadow-lg">
+                            🌐</div>
+                        <h3 class="text-3xl font-bold text-gray-900">Global Networking</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">বিশ্বের শীর্ষ গবেষক ও প্রতিষ্ঠানের সাথে কানেকশন তৈরি
+                        করা। সেমিনার এবং ওয়ার্কশপের মাধ্যমে নলেজ শেয়ারিং।</p>
+                    <ul class="space-y-3 text-sm font-bold text-gray-500">
+                        <li class="flex items-center gap-2"><span class="text-purple-500">✔</span> International
+                            Collaborations</li>
+                        <li class="flex items-center gap-2"><span class="text-purple-500">✔</span> Professional
+                            Workshops</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-gray-900 text-white relative overflow-hidden">
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold font-en">Our Working <span
+                        class="text-orange-500">Process</span></h2>
+                <p class="text-gray-400 mt-4">একটি সফল প্রজেক্টের পেছনে আমাদের ৩টি ধাপ।</p>
+            </div>
+
+            <div class="relative grid md:grid-cols-3 gap-12">
+                <div
+                    class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-orange-500/0 via-orange-500/50 to-orange-500/0 -translate-y-12">
+                </div>
+
+                <div class="relative text-center group">
+                    <div
+                        class="w-24 h-24 bg-gray-800 border-4 border-orange-500/30 rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-8 relative z-10 group-hover:border-orange-500 transition-all duration-500">
+                        01
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Discovery</h4>
+                    <p class="text-gray-400 text-sm">আপনার প্রয়োজন বোঝা এবং সঠিক রিসার্চ মেথডোলজি সিলেক্ট করা।</p>
+                </div>
+
+                <div class="relative text-center group">
+                    <div
+                        class="w-24 h-24 bg-gray-800 border-4 border-orange-500/30 rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-8 relative z-10 group-hover:border-orange-500 transition-all duration-500">
+                        02
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Implementation</h4>
+                    <p class="text-gray-400 text-sm">ডেটা অ্যানালাইসিস, মডেলিং এবং রিসার্চ পেপার ড্রাফটিং এর কাজ সম্পন্ন
+                        করা।</p>
+                </div>
+
+                <div class="relative text-center group">
+                    <div
+                        class="w-24 h-24 bg-gray-800 border-4 border-orange-500/30 rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-8 relative z-10 group-hover:border-orange-500 transition-all duration-500">
+                        03
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Delivery</h4>
+                    <p class="text-gray-400 text-sm">সম্পূর্ণ প্রজেক্ট হ্যান্ডওভার এবং পাবলিকেশন বা ইমপ্লিমেন্টেশনে
+                        পূর্ণ সাপোর্ট।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-[#fafafa]">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 font-en">How We <span
+                        class="text-orange-500">Work</span></h2>
+                <div class="w-16 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+
+                <div
+                    class="group text-center p-8 rounded-3xl transition-all duration-500 hover:bg-white hover:shadow-[0_20px_50px_rgba(0,0,0,0.05)]">
+                    <div
+                        class="text-6xl md:text-7xl font-black text-gray-200 mb-6 transition-all duration-500 group-hover:text-orange-500 group-hover:scale-110">
+                        01
+                    </div>
+                    <h4
+                        class="text-2xl font-bold mb-3 text-gray-800 transition-colors duration-500 group-hover:text-orange-600">
+                        Analysis</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed px-4">
+                        আমরা প্রথমে আপনার প্রজেক্ট বা লার্নিং গোল নিখুঁতভাবে অ্যানালাইসিস করি এবং একটি সঠিক রোডম্যাপ
+                        তৈরি করি।
+                    </p>
+                </div>
+
+                <div
+                    class="group text-center p-8 rounded-3xl transition-all duration-500 hover:bg-white hover:shadow-[0_20px_50px_rgba(0,0,0,0.05)]">
+                    <div
+                        class="text-6xl md:text-7xl font-black text-gray-200 mb-6 transition-all duration-500 group-hover:text-orange-500 group-hover:scale-110">
+                        02
+                    </div>
+                    <h4
+                        class="text-2xl font-bold mb-3 text-gray-800 transition-colors duration-500 group-hover:text-orange-600">
+                        Execution</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed px-4">
+                        ডেটা ড্রিভেন অ্যাপ্রোচে কাজ শুরু এবং প্রতিটি স্টেপ বা মাইলস্টোন শেষে আপনাকে নিয়মিত আপডেট
+                        প্রদান।
+                    </p>
+                </div>
+
+                <div
+                    class="group text-center p-8 rounded-3xl transition-all duration-500 hover:bg-white hover:shadow-[0_20px_50px_rgba(0,0,0,0.05)]">
+                    <div
+                        class="text-6xl md:text-7xl font-black text-gray-200 mb-6 transition-all duration-500 group-hover:text-orange-500 group-hover:scale-110">
+                        03
+                    </div>
+                    <h4
+                        class="text-2xl font-bold mb-3 text-gray-800 transition-colors duration-500 group-hover:text-orange-600">
+                        Impact</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed px-4">
+                        সফলভাবে প্রজেক্ট শেষ করা এবং আউটকামের ইমপ্যাক্ট যাচাই করে ফাইনাল ডেলিভারি নিশ্চিত করা।
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white relative overflow-hidden" id="faq" x-data="{ active: 1 }">
+        <div class="absolute top-0 left-0 w-full h-full opacity-[0.02] pointer-events-none"
+            style="background-image: radial-gradient(#f97316 1px, transparent 1px); background-size: 30px 30px;"></div>
+
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
+            <div class="max-w-4xl mx-auto">
+
+                <div class="text-center mb-16">
+                    <span
+                        class="text-orange-500 font-mono text-xs font-bold tracking-[0.4em] uppercase mb-3 block">Support
+                        Center</span>
+                    <h2 class="text-4xl md:text-5xl font-black text-gray-900 font-en">
+                        Frequently Asked <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500">Questions</span>
+                    </h2>
+                </div>
+
+                <div class="space-y-4">
+
+                    <div class="group border border-gray-100 rounded-[30px] overflow-hidden transition-all duration-300"
+                        :class="active === 1 ? 'bg-white shadow-[0_20px_50px_rgba(0,0,0,0.05)] border-orange-200' : 'bg-gray-50/50 hover:bg-white'">
+                        <button @click="active = active === 1 ? 0 : 1"
+                            class="w-full p-6 md:p-8 text-left flex justify-between items-center transition-all">
+                            <span class="text-lg md:text-xl font-bold font-en transition-colors"
+                                :class="active === 1 ? 'text-orange-600' : 'text-gray-900'">
+                                ০১. এই কোর্সে কি কি প্রজেক্ট করানো হবে?
+                            </span>
+                            <div class="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+                                :class="active === 1 ? 'bg-orange-500 text-white rotate-180' : 'bg-white text-gray-400 border border-gray-200'">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                        </button>
+                        <div x-show="active === 1" x-collapse x-transition:enter="transition ease-out duration-300"
+                            class="px-8 pb-8">
+                            <p class="text-gray-500 leading-relaxed font-medium border-l-4 border-orange-500 pl-4">
+                                আমাদের কোর্সে ৩টি রিয়েল-ওয়ার্ল্ড ইন্ডাস্ট্রি প্রজেক্ট এবং ১টি রিসার্চ পেপার
+                                ইমপ্লিমেন্টেশন করানো হবে। এর মধ্যে থাকবে কম্পিউটার ভিশন ভিত্তিক সিকিউরিটি সিস্টেম এবং
+                                একটি পূর্ণাঙ্গ ডেটা অ্যানালিটিক্স ড্যাশবোর্ড।
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="group border border-gray-100 rounded-[30px] overflow-hidden transition-all duration-300"
+                        :class="active === 2 ? 'bg-white shadow-[0_20px_50px_rgba(0,0,0,0.05)] border-orange-200' : 'bg-gray-50/50 hover:bg-white'">
+                        <button @click="active = active === 2 ? 0 : 2"
+                            class="w-full p-6 md:p-8 text-left flex justify-between items-center transition-all">
+                            <span class="text-lg md:text-xl font-bold font-en transition-colors"
+                                :class="active === 2 ? 'text-orange-600' : 'text-gray-900'">
+                                ০২. রিসার্চ পাবলিকেশনের জন্য কি কোনো আলাদা সাপোর্ট পাব?
+                            </span>
+                            <div class="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+                                :class="active === 2 ? 'bg-orange-500 text-white rotate-180' : 'bg-white text-gray-400 border border-gray-200'">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                        </button>
+                        <div x-show="active === 2" x-collapse class="px-8 pb-8">
+                            <p class="text-gray-500 leading-relaxed font-medium border-l-4 border-orange-500 pl-4">
+                                হ্যাঁ, আপনার গবেষণাপত্রটি উন্নত করতে আমাদের এক্সপার্ট মেন্টররা ম্যানুস্ক্রিপ্ট রাইটিং,
+                                জার্নাল সিলেকশন এবং পিয়ার রিভিউ প্রসেসে সরাসরি গাইডেন্স প্রদান করবেন।
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="group border border-gray-100 rounded-[30px] overflow-hidden transition-all duration-300"
+                        :class="active === 3 ? 'bg-white shadow-[0_20px_50px_rgba(0,0,0,0.05)] border-orange-200' : 'bg-gray-50/50 hover:bg-white'">
+                        <button @click="active = active === 3 ? 0 : 3"
+                            class="w-full p-6 md:p-8 text-left flex justify-between items-center transition-all">
+                            <span class="text-lg md:text-xl font-bold font-en transition-colors"
+                                :class="active === 3 ? 'text-orange-600' : 'text-gray-900'">
+                                ০৩. ক্লাস মিস করলে কি ব্যাকআপ রেকর্ডিং পাওয়া যাবে?
+                            </span>
+                            <div class="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+                                :class="active === 3 ? 'bg-orange-500 text-white rotate-180' : 'bg-white text-gray-400 border border-gray-200'">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                        </button>
+                        <div x-show="active === 3" x-collapse class="px-8 pb-8">
+                            <p class="text-gray-500 leading-relaxed font-medium border-l-4 border-orange-500 pl-4">
+                                অবশ্যই! প্রতিটি লাইভ ক্লাসের পর এইচডিপি রেকর্ডিং আমাদের লার্নিং পোর্টালে আপলোড করা হবে,
+                                যা আপনি আজীবন অ্যাক্সেস করতে পারবেন।
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-16 text-center">
+                    <div class="inline-flex items-center gap-4 bg-gray-50 p-4 rounded-2xl border border-gray-100">
+                        <span class="text-gray-500 text-sm font-medium">আপনার কি আরও কিছু জানার আছে?</span>
+                        <a href="#contact" class="text-orange-600 font-bold hover:underline">আমাদের সাথে সরাসরি কথা
+                            বলুন</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative bg-[#05080f] text-gray-400 pt-20 pb-5 overflow-hidden">
+        <div class="absolute top-0 left-0 w-64 h-64 bg-orange-600/5 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-600/5 blur-[150px] rounded-full"></div>
+
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-5">
+
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3">
+                        <img src="unnamed.png" alt="Skill Morph"
+                            class="h-20 w-20 rounded-2xl shadow-lg shadow-orange-500/20 object-cover">
+                        <span class="text-2xl font-bold text-white font-en tracking-tight">Skill<span
+                                class="text-orange-500">Morph</span></span>
+                    </div>
+                    <p class="text-sm leading-relaxed max-w-xs italic">
+                        "Ignite Your Mind with Intelligent Learning. Bridging the gap between research and real-world
+                        application."
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-white hover:bg-orange-500 hover:border-orange-500 hover:shadow-[0_0_20px_rgba(249,115,22,0.4)] transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-white hover:bg-[#0077b5] hover:border-[#0077b5] hover:shadow-[0_0_20px_rgba(0,119,181,0.4)] transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6 font-en uppercase tracking-widest text-sm">Quick Links</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="#"
+                                class="hover:text-orange-400 hover:pl-2 transition-all duration-300 flex items-center gap-2"><span>About
+                                    Our Mission</span></a></li>
+                        <li><a href="#"
+                                class="hover:text-orange-400 hover:pl-2 transition-all duration-300 flex items-center gap-2"><span>Research
+                                    Papers</span></a></li>
+                        <li><a href="#"
+                                class="hover:text-orange-400 hover:pl-2 transition-all duration-300 flex items-center gap-2"><span>Terms
+                                    & Privacy</span></a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6 font-en uppercase tracking-widest text-sm">Programs</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">ML for Research</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">Data Science Pro</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition-colors">Deep Learning Boot</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6 font-en uppercase tracking-widest text-sm">Contact Info</h4>
+                    <div class="space-y-4 text-sm mb-6">
+                        <p class="flex items-center gap-3"><span class="text-orange-500">📧</span> info@skillmorph.com
+                        </p>
+                        <p class="flex items-center gap-3"><span class="text-orange-500">📱</span> +880 1XXX-XXXXXX</p>
+                        <p class="flex items-start gap-3"><span class="text-orange-500">📍</span> Dhaka, Bangladesh</p>
+                    </div>
+                    <form class="relative group">
+                        <input type="email" placeholder="Your email"
+                            class="w-full bg-white/5 border border-white/10 rounded-xl py-3 px-4 text-white text-xs focus:outline-none focus:border-orange-500/50 transition-all">
+                        <button
+                            class="absolute right-2 top-2 bg-orange-600 hover:bg-orange-500 text-white p-1.5 rounded-lg transition-colors">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-en">
+                <p>&copy; 2026 <span class="text-white font-bold">Skill Morph</span>. Crafted for Intelligent Minds.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        class="fixed bottom-8 right-8 w-14 h-14 gradient-flame text-white rounded-full shadow-2xl hover:scale-110 transition z-50 flex items-center justify-center font-bold text-xl">
+        ↑
+    </button>
+
+    <script src="script.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</body>
+
+</html>
